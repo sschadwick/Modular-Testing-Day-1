@@ -1,12 +1,12 @@
 'use strict';
 
 var assignment = require('../assignment');
-var chai = require('chai');
-var expect = chai.expect;
+var expect = require('chai').expect;
+var greet = require(__dirname + '/../lib/greet');
 
 describe('assignment', function() {
   it('should return hello + name', function() {
-    expect(assignment.greet('Steven')).to.eql('hello ' + 'Steven');
+    expect(assignment.greet('test')).to.eql('hello ' + 'test');
   });
 });
 
