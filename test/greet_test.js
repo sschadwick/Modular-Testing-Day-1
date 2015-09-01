@@ -11,7 +11,7 @@ describe('assignment', function() {
 });
 
 describe('assignment', function() {
-  it('should NOT return hello + name', function () {
+  it('should return undefined if no parameter is given', function () {
     expect(assignment.greet()).to.eql(undefined);
   });
 });
