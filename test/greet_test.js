@@ -15,3 +15,11 @@ describe('assignment', function() {
     expect(assignment.greet()).to.eql(undefined);
   });
 });
+
+describe('command line greeting', function() {
+  it('should take the argument and say hello + arg', function() {
+
+    expect(assignment.greet(process.argv[2])).to.eql('hello ' + process.argv[2]);
+
+  });
+});

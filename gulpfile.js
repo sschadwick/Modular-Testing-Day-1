@@ -4,6 +4,7 @@
 var gulp = require('gulp');
 var jshint = require('gulp-jshint'); //linter
 var gulpMocha = require('gulp-mocha'); //tests
+var watch = require('gulp-watch'); //watcher
 
 //linter
 gulp.task('jshint', function() {
@@ -19,6 +20,10 @@ gulp.task('test', function() {
     .pipe(gulpMocha({
       reporter: 'nyan'
     }));
+});
+
+gulp.task('watch', function() {
+  return gulp.watch(['index.js', 'bin/greet', 'test/**/*.js', 'lib/**/*.js', 'gulpfile.js'], ['default']);
 });
 
 gulp.task('default', ['jshint', 'test']);
