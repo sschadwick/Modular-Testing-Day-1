@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+var greet = require(__dirname + '/../lib/greet');
+
+var result = greet(process.argv[2]);
+
+console.log(result);
+
+module.exports = result;
+//calls greet on a passed argument

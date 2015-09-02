@@ -1,0 +1,32 @@
+{
+  "name": "greet",
+  "version": "0.1.0",
+  "description": "an app that greets the user",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "bin": "bin/greet",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2",
+    "gulp-mocha": "^2.1.3",
+    "gulp-watch": "^4.3.5",
+    "mocha": "^2.3.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sschadwick/Modular-Testing-Day-1.git"
+  },
+  "author": "sschadwick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sschadwick/Modular-Testing-Day-1/issues"
+  },
+  "homepage": "https://github.com/sschadwick/Modular-Testing-Day-1#readme"
+}
